@@ -9,10 +9,16 @@ public class LandingPage extends BasePage {
     private By signIn = By.linkText("Go to /sign-in");
     private By register = By.linkText("Go to /register");
     private By newRegistration = By.linkText("Go to /new-registration");
-
+    
 
     public void open() {
-        getDriver().get("https://Member-portal.qa.meaningfulplatform.co.uk/");
+
+        String env = System.getenv("SIT_URL");
+        if (env == null) {
+            env = "https://member-portal.qa.meaningfulplatform.co.uk/";
+        }
+
+        getDriver().get(env);
     }
 
     public void selectLandingPageOption(String option) throws Throwable {

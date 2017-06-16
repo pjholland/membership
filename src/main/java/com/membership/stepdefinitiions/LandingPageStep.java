@@ -1,10 +1,8 @@
 package com.membership.stepdefinitiions;
 
-import com.membership.projectresouces.BasePage;
 import com.membership.pageobjects.LandingPage;
+import com.membership.projectresouces.BasePage;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 
 public class LandingPageStep extends BasePage {
@@ -13,6 +11,7 @@ public class LandingPageStep extends BasePage {
 
     @Given("^I am on the landing page$")
     public void i_am_on_the_landing_page() throws Throwable {
+        System.out.println("READ ME" + System.getProperties());
         landingPage = new LandingPage();
         landingPage.open();
         wait(1);

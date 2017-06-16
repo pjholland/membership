@@ -1,0 +1,14 @@
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/pageobjects/RegisterPage.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/stepdefinitiions/SignInPageStep.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/pageobjects/LandingPage.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/stepdefinitiions/RegisterPageStep.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/pageobjects/SignInPage.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/stepdefinitiions/DashboardPageStep.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/Member.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/projectresouces/BasePage.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/pageobjects/PaymentPage.java
+/home/paulh/IdeaProjects/membership/src/main/java/RunCukes.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/pageobjects/NewRegistrationPage.java
+/home/paulh/IdeaProjects/membership/src/main/java/com/membership/projectresouces/webDriverSingleton.java

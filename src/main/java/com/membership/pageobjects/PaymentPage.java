@@ -18,7 +18,7 @@ public class PaymentPage extends BasePage {
     public void enterTextIntoCardNumberField(WebDriver getDriver) {
         getDriver.switchTo().frame(getDriver.findElement(CARD_NUMBER_IFRAME));
         getDriver.findElement(CARD_NUMBER).click();
-        getDriver.findElement(CARD_NUMBER).sendKeys("5301250070000050 ");
+        getDriver.findElement(CARD_NUMBER).sendKeys("5301250070000050");
         getDriver.switchTo().defaultContent();
     }
 
@@ -29,7 +29,7 @@ public class PaymentPage extends BasePage {
 
     public void enterTextIntoExpiryYearField(WebDriver getDriver) {
         getDriver.findElement(CARD_EXPIRY_DATE_YEAR)
-                .sendKeys("17");
+                .sendKeys("21");
     }
 
     public void enterTextIntoSecurityCodeField(WebDriver getDriver) {

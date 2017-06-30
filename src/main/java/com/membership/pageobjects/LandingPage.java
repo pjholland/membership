@@ -9,7 +9,7 @@ public class LandingPage extends BasePage {
     private By signIn = By.linkText("Go to /sign-in");
     private By register = By.linkText("Go to /register");
     private By newRegistration = By.linkText("Go to /new-registration");
-    
+
 
     public void open() {
 
@@ -22,7 +22,7 @@ public class LandingPage extends BasePage {
     }
 
     public void selectLandingPageOption(String option) throws Throwable {
-        if (option.equals("log on")) {
+        if (option.equals("sign in")) {
             WebElement SignIn = getDriver().findElement(signIn);
             SignIn.click();
         } else if (option.equals("register")) {

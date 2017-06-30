@@ -6,6 +6,8 @@ import com.membership.projectresouces.BasePage;
 
 public class NewRegistrationPage extends BasePage {
 
+    public String phtest;
+
     String elementTitle = "member-title";
     String elementFirstName = "member-first-name";
     String elementLastName = "member-last-name";
@@ -26,6 +28,7 @@ public class NewRegistrationPage extends BasePage {
     public void fillInNewRegistrationPage() throws Exception {
 
         Member member = Member.buildTestMember();
+
 
         selectFromDropDownList(elementTitle, "Mr");
         type(Locators.id, elementFirstName, member.getFirstName());

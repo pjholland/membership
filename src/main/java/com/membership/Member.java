@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 
 public class Member {
 
+    private static Member testMember;
 
     private String firstName;
     private String lastName;
@@ -18,9 +19,15 @@ public class Member {
 
     public Member() {
 
+
+
     }
 
     public static Member buildTestMember() {
+
+        if(testMember != null) {
+            return testMember;
+        }
 
         Faker faker = new Faker();
         String LastName = faker.name().lastName();
@@ -36,6 +43,7 @@ public class Member {
         member.email = member.firstName.toLowerCase() + "." + LastName.toLowerCase() + "@mailinator.com";
         member.confirmEmail = member.firstName.toLowerCase() + "." + LastName.toLowerCase() + "@mailinator.com";
         System.out.println(member.email);
+        testMember = member;
         return member;
 
     }

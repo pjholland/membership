@@ -11,7 +11,6 @@ public class LandingPageStep extends BasePage {
 
     @Given("^I am on the landing page$")
     public void i_am_on_the_landing_page() throws Throwable {
-        System.out.println("READ ME" + System.getProperties());
         landingPage = new LandingPage();
         landingPage.open();
         wait(1);

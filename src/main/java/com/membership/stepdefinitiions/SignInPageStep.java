@@ -35,6 +35,9 @@ public class SignInPageStep extends BasePage {
         getDriver().get("https://www.mailinator.com/");
         resetPassword = new ResetPassword();
         resetPassword.getMailinatorReset();
+        resetPassword.switchToResetIframe(getDriver());
+        resetPassword.resetPassword(getDriver());
+
 
 
 

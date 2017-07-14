@@ -8,4 +8,4 @@ Feature: Member actions
     And The visitor selects the "new registration" page
     And The visitor completes a new member registration
     When the member requests a forgotten password email
-        #Then the member is able to log on using the new password
+    Then the member can view their details

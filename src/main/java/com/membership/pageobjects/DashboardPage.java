@@ -1,6 +1,7 @@
 package com.membership.pageobjects;
 
 
+import com.membership.Member;
 import com.membership.projectresouces.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,6 +21,11 @@ public class DashboardPage extends BasePage {
 
         WebElement SignOutLink = getDriver().findElement(signOutLink);
         SignOutLink.click();
+
+    }
+
+    public void checkMemberDetails(){
+        checkTextPresentOnPage(Member.buildTestMember().getPassword());
 
     }
 }
